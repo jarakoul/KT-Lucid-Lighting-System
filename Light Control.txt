@@ -1,0 +1,18 @@
+# =KT= Lucid Lighting System
+# Control configuration for an individual light - How the light acts
+
+# These lines are comments, don't delete non-comment lines except blank ones
+
+# Floating text, if any
+Float = ""
+
+# Communication channel, 0-99.  One control box manages every switch/light in the
+# region on the matching channel.  The system ignores commands by others, so
+# you only have to worry about the equipment you personally own.
+Channel = 0
+
+# Switch identifier, each light is controlled by any switches with the
+# matching identifier (on the same control box).  CASE INSENSITIVE (hall=Hall=HALL)
+Switch = "Main"
+
+# Control Configuration and Switch Configuration will control access to the light

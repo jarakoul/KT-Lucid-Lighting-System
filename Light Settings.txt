@@ -1,0 +1,65 @@
+# =KT= Lucid Lighting System
+# Light settings configuration for an individual light - How the light looks
+
+# These are the settings for when the light first turns/toggles on
+# Commands from switches can change intensity and color
+
+# Dummy lights (Dummy=TRUE) can glow but don't put out actual light, good for
+# conserving sim resources and getting finer control over lighting
+Dummy = FALSE
+
+# Face(s) to affect when turning on the light
+# If one face, put the face number (Face=2)
+# If all faces, put AllFaces (Face=AllFaces)
+# If a list of several faces, use list format (Face=[2,3])
+# If NO faces, put FALSE or an empty list (Face=[])
+Face = 0
+
+# Color to tint the specified faces, use NONE to not touch the tint, use MATCH to
+# always match the lighting Color (from below or from the switch)
+FaceTint = MATCH
+
+# Whether or not to set full bright on the specified faces, TRUE or FALSE
+FullBright = TRUE
+
+# How much to glow the specified faces, between 0.0 and 1.0
+Glow = 0.2
+
+
+# Lighting color in hex code format, eg..000000 is Black, ffffff is White,
+# ff0000 is Red, 7fff00 is Chartreuse, etc.
+Color = e7e6de
+
+# The intensity of the light, a floating point number between 0.0 and 1.0
+Intensity = 1.0
+
+# The radius where the light will reach at maximum, a floating point number
+# between 0.0 and 20.0, in meters.
+Radius = 10.0
+
+# How fast the light falls off as you get further from the center, a 
+# floating point number between 0.0 and whatever
+Falloff = 1.0
+
+
+# * * * * * * * * * * * * * * * * * * * * * * * *
+# Only change below here for Projector Lights, more info:
+#  https://wiki.secondlife.com/wiki/Lighting_and_shadows
+# These settings are ignored when Projector=NONE
+
+# The UUID of the projector image, NONE if you want to leave the light
+# as a point light
+Projector = NONE
+
+# The Field Of View of the projector light, in radians a float between 
+# 0.0 and 3.0
+FOV = 1.0
+
+# The Focus of the projector image, a float with whatever value, more
+# positive values are sharper, more negative blurrier
+Focus = 0.0
+
+# The Ambiance of the projector image, illuminating areas that are 
+# within the cone of the projector, but blocked by opaque objects and
+# would otherwise be in shadow.  A float between 0.0 and whatever
+Ambiance = 0.00
